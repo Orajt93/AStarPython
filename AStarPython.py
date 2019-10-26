@@ -63,9 +63,6 @@ class Field():
             self.Heurystyka = math.sqrt((19-x)**2+(0-y)**2)
             self.Moc = self.Heurystyka + self.KosztDotarcia
             self.KiedyDodany = kolejnosc
-        else:
-            self.Moc=1000000
-            self.KosztDotarcia=0
     
 #Główna funkcja latająca po polach
 def workWithFields(fieldToCheck):
@@ -129,8 +126,6 @@ while((checkField.x != 19) or (checkField.y != 0)):
             workWithFields(z)
             checkField = z
             break
-        if(workArea[z.x][z.y]==2):
-            fields.remove(z)
     if(find==0):
         break
 print("Mapa odwiedzonych miejsc:")

@@ -66,11 +66,7 @@ class Field():
         else:
             self.Moc=1000000
             self.KosztDotarcia=0
-
-    def toString(self):
-        return "x {} y{}".format(self.x,self.y)
     
-
 #Główna funkcja latająca po polach
 def workWithFields(fieldToCheck):
     tempx=fieldToCheck.x
